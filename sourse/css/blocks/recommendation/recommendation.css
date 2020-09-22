@@ -1,0 +1,29 @@
+.recommendation {
+  width: 80.72%;
+  margin: 0 auto;
+}
+
+.recommendation__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "main ." "main .";
+}
+
+.recommendation__item {
+  background-color: #fff;
+}
+
+.recommendation__item--dark {
+  background-color: #232323;
+}
+
+.recommendation__item:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+/*# sourceMappingURL=recommendation.css.map */

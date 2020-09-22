@@ -1,0 +1,22 @@
+.assortment__wrapper {
+  width: 80.72%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 477px 102px;
+}
+
+.assortment__list {
+  margin: 0;
+  padding: 0;
+}
+.assortment__list h2 {
+  margin: 0;
+}
+
+.brands-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=assortment.css.map */

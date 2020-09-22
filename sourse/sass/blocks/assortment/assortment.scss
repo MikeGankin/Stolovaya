@@ -1,0 +1,146 @@
+.assortment {
+    margin-bottom: 163px;
+}
+
+.assortment__wrapper {
+    width: 80.72%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 19.5% auto 19.6%;
+    grid-template-rows: 2fr auto; 
+    grid-template-areas: 
+    "assortmentList assortmentSlider assortmentStocks"
+    "brands brands brands";
+    grid-gap: 20px;
+    justify-content: space-between;
+}
+
+.assortment__list {
+    margin: 0;
+    padding: 24px 0 3px 0;
+    background-color: $white;
+    grid-area: assortmentList;
+
+    h2 {
+        margin: 0 auto 5px;
+        font-size: 21px;
+        @include regularFont;
+        color: #ffaf2d;
+        line-height: 1.875;
+        text-align: left;
+        width: 82%;
+    }
+
+    a {
+        font-size: 16px;
+        @include lightFont;
+        color: #303030;
+        line-height: 2.813;
+        text-align: left;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        padding-left: 26px;
+
+        &::after {
+            content: '>';
+            font-size: 14px;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            top: 3px;
+            right: 19px;
+            color:#d5d5d5;
+        }
+    }
+}
+
+.assortment__slider {
+    overflow: hidden;
+    width: 100%;
+    grid-area: assortmentSlider;
+}
+
+.assortment__stocks {
+    border: 2px solid $orange;
+    grid-area: assortmentStocks;
+    padding: 218px 0 0 26px;
+
+    p {
+        margin: 10px 0 -10px 0;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 36px;
+        margin: 12px 0 20px 0;
+    }
+
+    a {
+        font-weight: 300;
+        font-size: 18px;
+        text-decoration: none;
+        color: $orange;
+        position: relative;
+        display: block;
+
+        &::after {
+            content: '>';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            color: $orange;
+            top: 0;
+            right: 87px;
+        }
+    }
+}
+
+.brands-list {
+    margin: 0;
+    padding: 0;
+    grid-area: brands;
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+}
+
+.brands-item {
+    width: 18%;
+    position: relative;
+
+    a {
+        display: inline-block;
+        padding: 33px 0 26px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 70px;
+        top: 14px;
+        right: 0;
+        background-color: #efeeee;
+    }
+
+    img {
+        margin-top: 3px;
+    }
+}
+
+.brands-item--all a {
+    padding: 28px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #232323;
+    line-height: 2.222;  
+    text-decoration: none;
+}
+
+
+
