@@ -41,6 +41,7 @@
     align-items: center;
     margin-bottom: -4px;
     margin-right: 48px;
+    flex-shrink: 0;
 
     input {
         height: 35px;
@@ -94,6 +95,7 @@
 .search__item--portal {
     width: 9%;
     margin-right: 33px;
+    flex-shrink: 0;
 }
 
 .search__link--portal {
@@ -114,6 +116,10 @@
     p {
         margin: 2px 0 0 0;
     }
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
 }
 
 .search__item--chart {
@@ -122,6 +128,7 @@
     align-items: center;
     margin-bottom: -8px;
     position: relative;
+    flex-shrink: 0;
 
     .sum {
         margin: 0;
@@ -133,17 +140,30 @@
         font-weight: 400;
     }
 
-    span {
-        display: block;
-        position: absolute;
-        top: -6px;
-        left: 8px;
-        color: $orange;
-        font-size: 14px;
-        line-height: 1.143;
+    @media (max-width: $mobile) {
+        .sum,
+        .quantity {
+            display: none;
+        }
     }
 }
 
 .search__link--chart {
-    margin-right: 9px;
+    padding: 11.6% 17px 13.6%;
+    text-decoration: none;
+    color: #000;
+
+    img {
+        margin-right: 10px;
+    }
+
+    span {
+        display: block;
+        position: absolute;
+        top: 13px;
+        left: 26px;
+        color: $orange;
+        font-size: 14px;
+        line-height: 1.143;
+    }
 } 

@@ -1,0 +1,18 @@
+.opened {
+    display: flex;
+}
+
+.info__link:hover {
+    background-color: #33bb6f;
+}
+
+.search__link--chart:hover {
+    background-color: $orange;
+    color: #fff;
+}
+
+.search__link--chart:hover {
+    span {
+        color: #fff;
+    }
+}

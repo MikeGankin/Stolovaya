@@ -17,7 +17,7 @@
 
 .assortment__list {
     margin: 0;
-    padding: 24px 0 3px 0;
+    padding: 17px 0 3px 0;
     background-color: $white;
     grid-area: assortmentList;
 
@@ -140,6 +140,10 @@
     color: #232323;
     line-height: 2.222;  
     text-decoration: none;
+}
+
+.assortment__item:not(:last-child) {
+    border-bottom: 1px solid #eeeeee;
 }
 
 

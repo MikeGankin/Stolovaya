@@ -1,13 +1,30 @@
 .header {
     margin-bottom: 20px;
+
+    @media (max-width: $mobile) {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 .header__info {
     background-color: $green;
-    min-height: 48px;
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
 }
 
 .header__search {
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     background-color: #e8e7e7;
+    position: relative;
+}
+
+.header__burger {
+    display: none;
+
+    @media (max-width: $mobile) {
+        display: block;
+    }
 }
